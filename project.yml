@@ -42,3 +42,21 @@ packages:
         environment: {}
         annotations: {}
         limits: {}
+      - name: getinventory
+        clean: false
+        binary: false
+        main: ''
+        runtime: 'nodejs:default'
+        web: true
+        webSecure: false
+        parameters: {}
+        environment: 
+          CA_CERT: |
+            ${CA_CERT}
+          DATABASE_URL: "${DATABASE_URL}"
+          DATABASE: "${DATABASE}"
+          HOSTNAME: "${HOSTNAME}"
+          PASSWORD: "${PASSWORD}"
+          USERNAME: "${USERNAME}"
+        annotations: {}
+        limits: {}
