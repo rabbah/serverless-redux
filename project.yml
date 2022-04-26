@@ -20,3 +20,25 @@ packages:
         environment: {}
         annotations: {}
         limits: {}
+      - name: test
+        clean: false
+        binary: false
+        main: ''
+        runtime: 'nodejs:default'
+        web: true
+        webSecure: false
+        parameters: {}
+        environment: {}
+        annotations: {}
+        limits: {}
+      - name: base64
+        clean: false
+        binary: false
+        main: ''
+        runtime: 'nodejs:default'
+        web: true
+        webSecure: false
+        parameters: {}
+        environment: {}
+        annotations: {}
+        limits: {}
