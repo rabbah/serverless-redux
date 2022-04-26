@@ -8,3 +8,5 @@ function main() {
         "body": base64string
     }
 }
+
+main();

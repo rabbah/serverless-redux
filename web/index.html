@@ -88,12 +88,12 @@
       getInventory()
       </script>
       <script>
-        let results = await axios.get('https://jamstack-6rz5c.ondigitalocean.app/api/default/get-inventory');
-//           let data = [{"pic" : "https://dan-space.fra1.digitaloceanspaces.com/coffee-bag.png", "name" : "Coco-Loco", "description" : "Medium body with subtle acidity. Notes of sweet cocoa, toffee and brown sugar.", "price" : "7.99"},
-// {"pic" : "https://dan-space.fra1.digitaloceanspaces.com/coffee-bag.png", "name" : "Vanillhalla", "description" : "Light smooth medium body with light acidity. Vanilla, nutty and cherry flavor notes.", "price" : "9.99"},
-// {"pic" : "https://dan-space.fra1.digitaloceanspaces.com/coffee-bag.png", "name" : "French Roast", "description" : "Dry mouthfeel with deep smoky aroma. Flavor notes of tobacco & spice.", "price" : "8.99"}]
+//        let results = await axios.get('https://jamstack-6rz5c.ondigitalocean.app/api/default/get-inventory');
+          let data = [{"pic" : "https://dan-space.fra1.digitaloceanspaces.com/coffee-bag.png", "name" : "Coco-Loco", "description" : "Medium body with subtle acidity. Notes of sweet cocoa, toffee and brown sugar.", "price" : "7.99"},
+{"pic" : "https://dan-space.fra1.digitaloceanspaces.com/coffee-bag.png", "name" : "Vanillhalla", "description" : "Light smooth medium body with light acidity. Vanilla, nutty and cherry flavor notes.", "price" : "9.99"},
+{"pic" : "https://dan-space.fra1.digitaloceanspaces.com/coffee-bag.png", "name" : "French Roast", "description" : "Dry mouthfeel with deep smoky aroma. Flavor notes of tobacco & spice.", "price" : "8.99"}]
 
-        results.data.forEach(item => {
+        data.forEach(item => {
           let pic = item.pic;
           let name = item.name;
           let description = item.description;
