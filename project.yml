@@ -54,9 +54,5 @@ packages:
           CA_CERT: |
             ${CA_CERT}
           DATABASE_URL: "${DATABASE_URL}"
-          DATABASE: "${DATABASE}"
-          HOSTNAME: "${HOSTNAME}"
-          PASSWORD: "${PASSWORD}"
-          USERNAME: "${USERNAME}"
         annotations: {}
         limits: {}
