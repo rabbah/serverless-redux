@@ -1,0 +1,23 @@
+targetNamespace: ''
+cleanNamespace: false
+bucket: {}
+parameters: {}
+packages:
+  - name: sample
+    shared: false
+    clean: false
+    environment: {}
+    parameters: {}
+    annotations: {}
+    actions:
+      - name: hello
+        clean: false
+        binary: false
+        main: ''
+        runtime: 'nodejs:default'
+        web: true
+        webSecure: false
+        parameters: {}
+        environment: {}
+        annotations: {}
+        limits: {}
