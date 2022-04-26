@@ -41,7 +41,7 @@ async function main() {
         }
 }
 
-main().catch(console.error);
+// main().catch(console.error);
 
 // async function listDatabases(client) {
 //   const databasesList = await client.db().admin().listDatabases();
