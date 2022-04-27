@@ -43,6 +43,8 @@ async function main() {
     }
 }
 
+module.exports.main = main
+
 if (process.env.TEST) {
     main().then(console.log).catch(console.error)
 }
