@@ -32,16 +32,20 @@ async function main() {
         console.log(inventory);
         return {
             "body": inventory
-            }
-
-        } catch {
-            console.error();
-        } finally {
-            await client.close();
         }
+    } catch {
+        console.error();
+        return {
+            "error": "oops"
+        }
+    } finally {
+        await client.close();
+    }
 }
 
-// main().catch(console.error);
+if (process.env.TEST) {
+    main().then(console.log).catch(console.error)
+}
 
 // async function listDatabases(client) {
 //   const databasesList = await client.db().admin().listDatabases();

@@ -9,4 +9,6 @@ function main() {
     }
 }
 
-main();
+if (process.env.TEST) {
+    console.log(main())
+}
