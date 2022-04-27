@@ -51,8 +51,7 @@ packages:
         webSecure: false
         parameters: {}
         environment: 
-          CA_CERT: |
-            ${CA_CERT}
+          CA_CERT: "${CA_CERT}"
           DATABASE_URL: "${DATABASE_URL}"
         annotations: {}
         limits: {}
